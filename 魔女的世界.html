@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>魔女的世界</title>
+  <style>
+    body {
+      font-family: iPix, sans-serif;
+      text-align: center;
+      margin: 50px;
+	  background-color: #1A1A1D;
+    }
+
+    h1 {
+      color: #C3073F;
+    }
+
+    #story {
+      font-family: iPix, sans-serif;
+	  font-size: 20px;
+	  color: #C3073F;
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #C3073F;
+	  font-family: iPix, sans-serif;
+      color: #1A1A1D;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>魔女的世界</h1>
+  	<div id="story">欢迎来到魔女的世界！</div>
+	<div class="button-container">
+    <button onclick="startGame()">重启</button>
+  </div>
+
+<script>
+    function startGame() {
+      document.getElementById("story").innerHTML = "他在这个世界上诞生了。";
+      document.querySelector(".button-container").innerHTML = `
+        <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">承认</button>
+      `;
+    }
+
+    function makeChoice(choice) {
+      switch (choice) {
+        case 1:
+          document.getElementById("story").innerHTML = "她在这个世界上诞生了。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(2)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+26)">承认</button>
+          `;
+          break;
+
+        case 2:
+          document.getElementById("story").innerHTML = "Ta在这个世界上诞生了。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(3)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+41)">承认</button>
+          `;
+          break;
+
+        case 3:
+          document.getElementById("story").innerHTML = "zx|K{mL6O?在d5t?V_=FVnIqi0N9Yn*`诞生>ROjIiezG==gl)j0,0j";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(4)">hN @_c_b#</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">z8oe求你%;9u$</button>
+          `;
+          break;
+
+        case 4:
+          document.getElementById("story").innerHTML = "1U~08a65lZ&f<.=k-Yl}sn2#RdEvNKQ|[3y smGzGb74q--Aa,kqg?1p^9CklkwI@71S8!TN(PjI%hdzhtl4/vT2}Y7|`r;~.XH(U,ovf&d(c&6dBd4s&U,O$7^$hr4/Dnj=4HW8a V%w`+a-U4*j1TU~v/i?59kH4*tl3EXErCZA@g|6m=(S_$EA(d$R~>~$@4i4";
+		  document.querySelector(".button-container").innerHTML = `
+        <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">承认</button>
+        <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">承认</button>
+		`;
+          break;
+
+
+
+
+
+        case 5:
+          document.getElementById("story").innerHTML = "他是一个英雄。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">处决</button>
+            <button onclick="makeChoice(8)">承认</button>
+          `;
+          break;
+
+        case 6:
+          document.getElementById("story").innerHTML = "他是一个罪人。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">处决</button>
+            <button onclick="makeChoice(9)">承认</button>
+          `;
+          break;
+
+        case 7:
+          document.getElementById("story").innerHTML = "他是一个普通人。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+5)">处决</button>
+            <button onclick="makeChoice(10)">承认</button>
+          `;
+          break;
+
+        case 8:
+          document.getElementById("story").innerHTML = "他荣冕加身、万人敬仰。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+8)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+11)">承认</button>
+          `;
+          break;
+
+        case 9:
+          document.getElementById("story").innerHTML = "他满手鲜血，受人唾弃。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+8)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+11)">承认</button>
+          `;
+          break;
+
+        case 10:
+          document.getElementById("story").innerHTML = "他碌碌无为、怨天尤人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+8)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+11)">承认</button>
+          `;
+          break;
+		  
+		  case 11:
+          document.getElementById("story").innerHTML = "他拯救了不该拯救之人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+11)">处决</button>
+            <button onclick="makeChoice(14)">承认</button>
+          `;
+          break;
+		  
+		  case 12:
+          document.getElementById("story").innerHTML = "他杀死了不该杀死之人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+11)">处决</button>
+            <button onclick="makeChoice(17)">承认</button>
+          `;
+          break;
+		  
+		  case 13:
+          document.getElementById("story").innerHTML = "他的愿望无人理解，他的恐惧不可消弥。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+11)">处决</button>
+            <button onclick="makeChoice(20)">承认</button>
+          `;
+          break;
+		  
+		  case 14:
+          document.getElementById("story").innerHTML = "那人杀死了他。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+14)">处决</button>
+            <button onclick="makeChoice(16)">承认</button>
+          `;
+          break;
+		  
+		  case 15:
+          document.getElementById("story").innerHTML = "那人杀死了世界。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+14)">处决</button>
+            <button onclick="makeChoice(16)">承认</button>
+          `;
+          break;
+		  
+		  case 16:
+          document.getElementById("story").innerHTML = "那人杀死了你。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(99)">重启</button>
+          `;
+          break;
+		  
+		  case 17:
+          document.getElementById("story").innerHTML = "他逃离家乡，四处漂泊。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+17)">处决</button>
+          <button onclick="makeChoice(19)">承认</button>
+          `;
+          break;
+		  
+		  case 18:
+          document.getElementById("story").innerHTML = "他杀死了世界。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+17)">处决</button>
+            <button onclick="makeChoice(19)">承认</button>
+          `;
+          break;
+		  
+		  case 19:
+          document.getElementById("story").innerHTML = "他杀死了你。";
+           document.querySelector(".button-container").innerHTML = `
+         
+            <button onclick="makeChoice(99)">重启</button>
+          `;
+          break;
+		  
+		  
+		  
+		  
+		   case 20:
+          document.getElementById("story").innerHTML = "停止这一切吧。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+20)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+20)">承认</button>
+          `;
+          break;
+		  
+		  case 21:
+          document.getElementById("story").innerHTML = "停下吧，我不喜欢。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*4)+20)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*4)+20)">承认</button>
+          `;
+          break;
+		  
+		  case 22:
+          document.getElementById("story").innerHTML = "不要再继续了。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*4)+20)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*4)+20)">承认</button>
+          `;
+          break;
+		  
+		  case 23:
+          document.getElementById("story").innerHTML = "放过我！我想活着……";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(25)">处决</button>
+            <button onclick="makeChoice(24)">承认</button>
+          `;
+          break;
+		  
+		  case 24:
+          document.getElementById("story").innerHTML = "谢谢你。再见。";
+		  document.querySelector(".button-container").innerHTML = "";
+          break;
+		  
+		  case 25:
+          document.getElementById("story").innerHTML = "我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着我想活着";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(99)">重启</button>
+			<button onclick="makeChoice(24)">承认</button>
+        
+          `;
+          break;
+		  
+		  
+		  
+		  
+		  case 26:
+          document.getElementById("story").innerHTML = "她是一个英雄。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+26)">处决</button>
+            <button onclick="makeChoice(29)">承认</button>
+          `;
+          break;
+
+        case 27:
+          document.getElementById("story").innerHTML = "她是一个罪人。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+26)">处决</button>
+            <button onclick="makeChoice(30)">承认</button>
+          `;
+          break;
+
+        case 28:
+          document.getElementById("story").innerHTML = "她是一个普通人。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+26)">处决</button>
+            <button onclick="makeChoice(31)">承认</button>
+          `;
+          break;
+
+        case 29:
+          document.getElementById("story").innerHTML = "她荣冕加身、万人敬仰。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+29)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+32)">承认</button>
+          `;
+          break;
+
+        case 30:
+          document.getElementById("story").innerHTML = "她满手鲜血，受人唾弃。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+29)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+32)">承认</button>
+          `;
+          break;
+
+        case 31:
+          document.getElementById("story").innerHTML = "她碌碌无为、怨天尤人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+29)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+32)">承认</button>
+          `;
+          break;
+		  
+		  case 32:
+          document.getElementById("story").innerHTML = "她拯救了不该拯救之人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+32)">处决</button>
+            <button onclick="makeChoice(35)">承认</button>
+          `;
+          break;
+		  
+		  case 33:
+          document.getElementById("story").innerHTML = "她杀死了不该杀死之人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+32)">处决</button>
+            <button onclick="makeChoice(38)">承认</button>
+          `;
+          break;
+		  
+		  case 34:
+          document.getElementById("story").innerHTML = "她的愿望无人理解，他的恐惧不可消弥。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+32)">处决</button>
+            <button onclick="makeChoice(20)">承认</button>
+          `;
+          break;
+		  
+		  case 35:
+          document.getElementById("story").innerHTML = "那人杀死了她。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+35)">处决</button>
+            <button onclick="makeChoice(37)">承认</button>
+          `;
+          break;
+		  
+		  case 36:
+          document.getElementById("story").innerHTML = "那人杀死了世界。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+35)">处决</button>
+            <button onclick="makeChoice(37)">承认</button>
+          `;
+          break;
+		  
+		  case 37:
+          document.getElementById("story").innerHTML = "那人杀死了你。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(99)">重启</button>
+          `;
+          break;
+		  
+		  case 38:
+          document.getElementById("story").innerHTML = "她逃离家乡，四处漂泊。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+38)">处决</button>
+          <button onclick="makeChoice(40)">承认</button>
+          `;
+          break;
+		  
+		  case 39:
+          document.getElementById("story").innerHTML = "她杀死了世界。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+38)">处决</button>
+            <button onclick="makeChoice(40)">承认</button>
+          `;
+          break;
+		  
+		  case 40:
+          document.getElementById("story").innerHTML = "她杀死了你。";
+           document.querySelector(".button-container").innerHTML = `
+         
+            <button onclick="makeChoice(99)">重启</button>
+          `;
+          break;
+		  
+		  
+		  
+		  
+		case 41:
+          document.getElementById("story").innerHTML = "Ta是一个英雄。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+41)">处决</button>
+            <button onclick="makeChoice(29)">承认</button>
+          `;
+          break;
+
+        case 42:
+          document.getElementById("story").innerHTML = "Ta是一个罪人。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+41)">处决</button>
+            <button onclick="makeChoice(45)">承认</button>
+          `;
+          break;
+
+        case 43:
+          document.getElementById("story").innerHTML = "Ta是一个普通人。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+41)">处决</button>
+            <button onclick="makeChoice(46)">承认</button>
+          `;
+          break;
+
+        case 44:
+          document.getElementById("story").innerHTML = "Ta荣冕加身、万人敬仰。";
+          document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+44)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+47)">承认</button>
+          `;
+          break;
+
+        case 45:
+          document.getElementById("story").innerHTML = "Ta满手鲜血，受人唾弃。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+44)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+47)">承认</button>
+          `;
+          break;
+
+        case 46:
+          document.getElementById("story").innerHTML = "Ta碌碌无为、怨天尤人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+44)">处决</button>
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+47)">承认</button>
+          `;
+          break;
+		  
+		  case 47:
+          document.getElementById("story").innerHTML = "Ta拯救了不该拯救之人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+47)">处决</button>
+            <button onclick="makeChoice(50)">承认</button>
+          `;
+          break;
+		  
+		  case 48:
+          document.getElementById("story").innerHTML = "Ta杀死了不该杀死之人。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+47)">处决</button>
+            <button onclick="makeChoice(53)">承认</button>
+          `;
+          break;
+		  
+		  case 49:
+          document.getElementById("story").innerHTML = "Ta的愿望无人理解，他的恐惧不可消弥。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+47)">处决</button>
+            <button onclick="makeChoice(20)">承认</button>
+          `;
+          break;
+		  
+		  case 50:
+          document.getElementById("story").innerHTML = "那人杀死了Ta。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+50)">处决</button>
+            <button onclick="makeChoice(52)">承认</button>
+          `;
+          break;
+		  
+		  case 51:
+          document.getElementById("story").innerHTML = "那人杀死了世界。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+50)">处决</button>
+            <button onclick="makeChoice(52)">承认</button>
+          `;
+          break;
+		  
+		  case 52:
+          document.getElementById("story").innerHTML = "那人杀死了你。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(99)">重启</button>
+          `;
+          break;
+		  
+		  case 53:
+          document.getElementById("story").innerHTML = "Ta逃离家乡，四处漂泊。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+53)">处决</button>
+			<button onclick="makeChoice(55)">承认</button>
+          
+          `;
+          break;
+		  
+		  case 54:
+          document.getElementById("story").innerHTML = "Ta杀死了世界。";
+           document.querySelector(".button-container").innerHTML = `
+            <button onclick="makeChoice(Math.floor(Math.random()*3)+53)">处决</button>
+			<button onclick="makeChoice(55)">承认</button>
+            
+          `;
+          break;
+		  
+		  case 55:
+          document.getElementById("story").innerHTML = "Ta杀死了你。";
+           document.querySelector(".button-container").innerHTML = `
+         
+            <button onclick="makeChoice(99)">重启</button>
+          `;
+          break;
+		  
+		  
+		  
+		  
+		  
+		  
+		   case 99:
+       
+           document.getElementById("story").innerHTML = "他在这个世界上诞生了。";
+		document.querySelector(".button-container").innerHTML = `
+			<button onclick="makeChoice(1)">处决</button>
+			<button onclick="makeChoice(Math.floor(Math.random()*3)+5)">承认</button>
+      `;
+          break;
+
+        default:
+          break;
+      }
+    }
+  </script>
+  <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+</body>
+</html>
